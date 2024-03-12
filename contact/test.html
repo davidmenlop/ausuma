@@ -1,0 +1,82 @@
+<html>
+    <head>
+      <title>reCAPTCHA demo: Simple page</title>
+      <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+
+<script>
+    function onSubmit(token) {
+        alert('form submitted');
+      document.getElementById("demo-form").submit();
+      
+    }
+  </script>
+    </head>
+    <body>
+        <form name="demo-form" method="POST">
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="first-name" class="required">First Name</label>
+                    <input type="text" class="form-control" id="first-name" name="first-name" required
+                        placeholder="Enter your first name"/>
+                </div>
+                <div class="form-group col">
+                    <label for="last-name" class="required">Last Name</label>
+                    <input type="text" class="form-control" id="last-name" name="last-name" required
+                        placeholder="Enter your last name"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="company-name">Company Name</label>
+                <input type="text" class="form-control" id="company-name" name="company-name" 
+                    placeholder="Enter your company name"/>
+            </div>
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="phone" class="required">Phone</label>
+                    <input type="text" class="form-control" id="phone" name="phone" required
+                        placeholder="Enter your Phone number"/>
+                </div>
+                <div class="form-group col">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" class="form-control" id="mobile" name="mobile"
+                        placeholder="Enter your Mobile number"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="required">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required
+                    placeholder="Enter your email"/>
+            </div>
+            <div class="form-group">
+                <label for="reason-for-contact" class="required">Reason for contact</label>
+                <select class="form-control selectView" id="reason-for-contact" name="reason-for-contact" required>
+                    <option value="" disabled selected>Select a reason</option>
+                    <option value="Raise a complaint">Raise a complaint</option>
+                    <option value="I want to do signup and start trial">I want to do signup and start trial</option>
+                    <option value="I want to see running demo">I want to see running demo</option>
+                    <option value="I want to know more about ausuma">I want to know more about Ausuma</option>
+                    <option value="Any other reason">Any other reason</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label for="subject" class="required">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" required
+                    placeholder="Enter the subject"/>
+            </div>
+            <div class="form-group">
+                <label for="more-about-yourself">Tell us more about yourself</label>
+                <textarea class="form-control" id="more-about-yourself" name="more-about-yourself"
+                    rows="4"></textarea>
+            </div>
+            <!-- <button type="submit"  onclick="addCustomerData()" class="navbar-btn btn btn-sm btn-success lift ms-auto">Submit</button> -->
+             <input type="submit" class="g-recaptcha navbar-btn btn btn-sm btn-success lift ms-auto"                                        
+                data-sitekey="6Lc_JAUpAAAAAGnYFw85oY4q2AtjtMxQfvwGMUcg" 
+                data-callback="onSubmit" 
+                data-action="submit"/>
+        </form>
+
+
+    </body>
+  </html>

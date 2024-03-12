@@ -1,0 +1,71 @@
+.required::after {
+    content: " *";
+    color: red;
+}
+
+#more-about-yourself{
+  resize: none;
+    }
+
+  .selectView {
+    appearance: menulist;
+    border-radius: 10;
+    }
+
+    /* Set the height and width for the navbar */
+.navbar {
+  height: 88.19px;
+  width: 1349px;
+}
+
+/* Adjust padding and margin for navbar content to fit within the specified width */
+.navbar-brand,
+.navbar-collapse {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Center the text vertically within the navbar */
+.navbar-brand-img,
+.navbar-nav li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adjust the height and line height for the text inside the navbar */
+.navbar-brand-img img,
+.navbar-nav li a {
+  height: 100%;
+  line-height: 1;
+}
+
+.loader{
+  position:fixed; top:250px;
+  left:650px; right:0; bottom:0;     
+  background:rgba(255,255,255,.8);
+  /*padding-top:150px;*/
+  padding-top:20px;
+  z-index:99999;
+ }
+ 
+ .loader div{
+     border: 16px solid #f3f3f3; /* Light grey */
+     border-top: 16px solid #3498db; /* Blue */
+     border-radius: 50%;
+     width: 120px;
+     height: 120px;
+     animation: spin 2s linear infinite;
+ }
+ 
+ @keyframes spin {
+     0% { transform: rotate(0deg); }
+     100% { transform: rotate(360deg); }
+ }
+
+ .swal2-container {
+  display: -webkit-box;
+  display: flex;
+  position: fixed;
+  z-index: 300000;
+}
