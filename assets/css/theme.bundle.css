@@ -25216,4 +25216,7 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     height: auto;
     max-width: 100%
 }
+.logo{
+    max-width: 200px;
+}
 /*# sourceMappingURL=theme.bundle.css.map*/
