@@ -25232,6 +25232,25 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     background-size: cover;
 }
 
+.mobile-cta{
+    display: none;
+}
+
+@media(max-width: 992px){
+    .cards{
+        width: 90%;
+        margin-inline: 5%;
+    }
+
+    .desktop-cta{
+        display: none;
+    }
+
+    .mobile-cta{
+        display: inline-block;
+    }
+}
+
 .card1{
     background-image: url('../img/card1.png');
 }
