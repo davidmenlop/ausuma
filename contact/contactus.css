@@ -69,3 +69,18 @@
   position: fixed;
   z-index: 300000;
 }
+
+.mobile-cta{
+  display: none;
+}
+
+@media(max-width: 992px){
+
+  .desktop-cta{
+      display: none;
+  }
+
+  .mobile-cta{
+      display: inline-block;
+  }
+}
